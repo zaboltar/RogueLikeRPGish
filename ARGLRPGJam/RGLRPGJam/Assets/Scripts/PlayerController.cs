@@ -25,11 +25,13 @@ public class PlayerController : MonoBehaviour {
 	public string startPoint;
 	public bool canMove;
 
+	private SFXManager sfxMan;
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
 		myRigidBody = GetComponent<Rigidbody2D>();
+		sfxMan = FindObjectOfType<SFXManager>();
 		
 		if(!playerExists)
 		{
@@ -107,6 +109,7 @@ public class PlayerController : MonoBehaviour {
 				attacking = true;
 				myRigidBody.velocity = Vector2.zero;
 				anim.SetBool("Attack", true);
+				sfxMan.playerAttack.Play();
 				}
 
 
