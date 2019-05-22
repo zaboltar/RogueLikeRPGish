@@ -11,17 +11,22 @@ public class EnemyHealthManager : MonoBehaviour {
 
 	public int expToGive;
 
+	public string enemyQuestName;
+	private gpjQuestManager theQM;
+
 	// Use this for initialization
 	void Start () {
 	currentHealth = maxHealth;	
 
 	thePlayerStats = FindObjectOfType<PlayerStats>();
+	theQM = FindObjectOfType<gpjQuestManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(currentHealth <=0)
 		{
+			theQM.enemyKilled = enemyQuestName;
 			Destroy (gameObject);
 
 			thePlayerStats.AddExperience(expToGive);

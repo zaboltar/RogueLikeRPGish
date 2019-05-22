@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4690754303069375983}
   - component: {fileID: 8318219887393243943}
   m_Layer: 0
-  m_Name: EvilEnemy
+  m_Name: EvilSlime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,6 +135,7 @@ MonoBehaviour:
   maxHealth: 15
   currentHealth: 15
   expToGive: 5
+  enemyQuestName: EvilSlime
 --- !u!114 &8318219887393243946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  damageNumber: {fileID: 0}
+  damageNumber: {fileID: 7875939994391367434, guid: f9c18e494c62c084a8f36e3e8e94a464,
+    type: 3}
 --- !u!50 &8318219887393243943
 Rigidbody2D:
   serializedVersion: 4

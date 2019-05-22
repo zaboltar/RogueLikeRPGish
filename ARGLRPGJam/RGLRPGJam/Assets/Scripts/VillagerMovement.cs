@@ -5,31 +5,31 @@ using UnityEngine;
 public class VillagerMovement : MonoBehaviour {
 
 	public float moveSpeed;
-
+	
 	private Vector2 minWalkPoint;
 	private	Vector2 maxWalkPoint;
+
 	private Rigidbody2D myRigidbody;
+
 	public bool isWalking;
+	private bool hasWalkZone;
+	public bool canWalk;
+
 	public float walkTime;
 	public float waitTime;
 	private float walkCounter;
 	private float waitCounter;
 	private int WalkDirection;
+
 	public Collider2D walkZone;
-	private bool hasWalkZone;
+
+	private DialogueManager theDM;
 
 
 
-
-	/*nota importante; por alguna razón desconocida, al llegar 
-	a un borde, el npc deja de moverse, ptm, no logro ubicar
-	el problema;
-	culparAlFujimorismo(true);
-	*/ 
-
-	// Use this for initialization
 	void Start () {
 		myRigidbody = GetComponent<Rigidbody2D>();
+		theDM = FindObjectOfType<DialogueManager>();
 	
 		waitCounter = waitTime;
 		walkCounter = walkTime;
@@ -43,10 +43,23 @@ public class VillagerMovement : MonoBehaviour {
 				hasWalkZone = true;
 			}
 
+		canWalk = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (!theDM.dialogueActive)
+		{
+			canWalk = true;
+		}
+
+		if (!canWalk)
+		{
+			myRigidbody.velocity = Vector2.zero;
+			return;
+		}
+
 		if(isWalking)
 		{
 			walkCounter -= Time.deltaTime;
