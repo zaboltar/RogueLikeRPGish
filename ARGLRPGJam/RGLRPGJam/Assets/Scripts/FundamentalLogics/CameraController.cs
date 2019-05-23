@@ -10,8 +10,8 @@ public class CameraController : MonoBehaviour {
 	public float moveSpeed;
 	private static bool cameraExists;
 	public BoxCollider2D boundBox;
-	private Vector3 minBounds;
-	private Vector3 maxBounds;
+	public Vector3 minBounds;
+	public Vector3 maxBounds;
 	private Camera theCamera;
 	private float halfHeight;
 	private float halfWidth;
