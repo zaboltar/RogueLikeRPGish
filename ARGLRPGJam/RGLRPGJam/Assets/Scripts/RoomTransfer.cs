@@ -34,8 +34,10 @@ public class RoomTransfer : MonoBehaviour
             cam.maxBounds += cameraChange;
 
             other.transform.position += playerChange;
+            
             cam.boundBox = newBoundBox;
             cam.SetBounds(newBoundBox);
+           
         }
     }
 }

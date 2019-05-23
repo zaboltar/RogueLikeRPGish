@@ -6,12 +6,17 @@ public class Bounds : MonoBehaviour
 {
     private BoxCollider2D bounds;
     private CameraController theCamera;
+    public bool startsLevel;
     
     void Start()
     {
-        bounds = GetComponent<BoxCollider2D>();
-        theCamera = FindObjectOfType<CameraController>();
-        theCamera.SetBounds(bounds);
+        if (startsLevel)
+        {
+            bounds = GetComponent<BoxCollider2D>();
+            theCamera = FindObjectOfType<CameraController>();
+            theCamera.SetBounds(bounds);
+        }
+        
     }
 
    
