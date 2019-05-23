@@ -1,7 +1,27 @@
 fileFormatVersion: 2
 guid: 5765acac2c13cd04aa350660b6050613
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: manuelaCola_0
+    21300002: manuelaCola_1
+    21300004: manuelaCola_2
+    21300006: manuelaCola_3
+    21300008: manuelaCola_4
+    21300010: manuelaCola_5
+    21300012: manuelaCola_6
+    21300014: manuelaCola_7
+    21300016: manuelaCola_8
+    21300018: manuelaCola_9
+    21300020: manuelaCola_10
+    21300022: manuelaCola_11
+    21300024: manuelaCola_12
+    21300026: manuelaCola_13
+    21300028: manuelaCola_14
+    21300030: manuelaCola_15
+    21300032: manuelaCola_16
+    21300034: manuelaCola_17
+    21300036: manuelaCola_18
+    21300038: manuelaCola_19
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -31,7 +51,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +60,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -60,7 +80,40 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -71,7 +124,407 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: manuelaCola_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 801
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.30336145, y: 0.046218872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e57afac6d16c549be39190f50815b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 801
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.4495801, y: 0.036134895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb11d249192527f44b6f66427ec1fb77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_2
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 801
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.29327774, y: 0.05126121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959fcfa47eea0814aac74c7d5e76e9d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_3
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 801
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.45462245, y: 0.05630285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c2a5d717bd56d42b2f8635169c1494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_4
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 609
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.29831937, y: 0.05630285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87483ba46d77f34da9e240f1bf7ca04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 609
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.44958046, y: 0.056303546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99227e7cf6f8cc5429d186bf4d9d74ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_6
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 609
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.29327774, y: 0.05630285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6a3a949d6ded147b6971b433939216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_7
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 609
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.45462245, y: 0.051260516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eaa1d64112612f4f9a9a7da05fa14b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_8
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 417
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.3033614, y: 0.056302503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9040d350c2e30ea45a751c82ce9956cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_9
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 417
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.4495801, y: 0.056302503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015243117fbb70247ab1a3c856b222a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_10
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 417
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.29327774, y: 0.051260516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81e43a80c6b51d4f8d89ac8fd0eaa6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_11
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 417
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.45462245, y: 0.056302503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4a8ca6e1689444b9bccce5e61d5d81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_12
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 225
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.29831946, y: 0.056302503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d082f92db83acec499fc1c74d04dd3c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_13
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 225
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.4495801, y: 0.056302503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25151e57275b3c74a9b3a086228735ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_14
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 225
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.29327774, y: 0.056302503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df00e34d65bae5b4aa7fa5017cb2db3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_15
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 225
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.45966408, y: 0.056302503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b04768eb215a54880d5f6ba8fbf532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_16
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 33
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.3033614, y: 0.051260255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb7d1763c931b54286a686815fcbf53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_17
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 33
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.4546221, y: 0.056302246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d5f5c484f5e284fb73cb35c88ed65a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_18
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 33
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.29831973, y: 0.051260255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35db983932f1b1a49a6cf2505b7cd804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manuelaCola_19
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 33
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.45966408, y: 0.051260255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc851725003228f4b90f1c7fa644d1b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
