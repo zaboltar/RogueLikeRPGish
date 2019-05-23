@@ -109,7 +109,11 @@ public class PlayerController : MonoBehaviour {
 				attacking = true;
 				myRigidBody.velocity = Vector2.zero;
 				anim.SetBool("Attack", true);
-				sfxMan.playerAttack.Play();
+				if (sfxMan != null)
+				{
+					sfxMan.playerAttack.Play();
+				}
+				
 				}
 
 
