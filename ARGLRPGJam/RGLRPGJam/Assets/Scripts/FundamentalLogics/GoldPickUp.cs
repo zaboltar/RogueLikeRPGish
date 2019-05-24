@@ -19,7 +19,11 @@ public class GoldPickUp : MonoBehaviour
         if (other.gameObject.name == "Player" )
         {
             theMM.AddMoney(value);
-            sfxMan.coinPick.Play();
+            if (sfxMan != null)
+            {
+                sfxMan.coinPick.Play();
+            }
+            
             Destroy(gameObject);
         }
     }

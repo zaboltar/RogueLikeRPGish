@@ -71,7 +71,11 @@ public class PlayerHealthManager : MonoBehaviour {
 		flashActive = true;
 		flashCounter = flashLength;
 
-		sfxMan.playerHurt.Play();
+		if (sfxMan != null)
+		{
+			sfxMan.playerHurt.Play();
+		}
+		
 	}
 
 

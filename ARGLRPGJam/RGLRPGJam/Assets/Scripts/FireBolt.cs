@@ -5,9 +5,11 @@ using UnityEngine;
 public class FireBolt : MonoBehaviour
 {
    public float speed;
-
+   public int currentDamage = 1;
    private Transform player;
    private Vector2 target;
+
+   public GameObject damageNumber;
    
    void Start ()
    {
@@ -29,12 +31,18 @@ public class FireBolt : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            other.GetComponent<PlayerHealthManager>().HurtPlayer(currentDamage);
+            var clone = (GameObject) Instantiate(damageNumber, other.transform.position, Quaternion.Euler(Vector3.zero));
+			clone.GetComponent<FloatingNumbers>().damageNumber = currentDamage;
             DestroyFireBolt();
         }
     }
 
    void DestroyFireBolt()
    {
-       Destroy(gameObject);
+      Destroy(gameObject);
+
    }
+
+ 
 }
