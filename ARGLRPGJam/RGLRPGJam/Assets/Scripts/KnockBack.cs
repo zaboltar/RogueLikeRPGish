@@ -14,10 +14,17 @@ public class KnockBack : MonoBehaviour
             Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
             if (enemy != null)
             {
-                enemy.GetComponent<LogEnemy>().currentState = EnemyState.stagger;
+                if (enemy.GetComponent<LogEnemy>() != null)
+                {
+                    enemy.GetComponent<LogEnemy>().currentState = EnemyState.stagger;
                 Vector2 difference = enemy.transform.position - transform.position;
                 difference = difference.normalized * thrust;
                 enemy.AddForce(difference, ForceMode2D.Impulse);
+                } else
+                {
+                    return;
+                }
+                
 
                 if (enemy != null)
                 {

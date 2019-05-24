@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 5269d7a3e24ae78479d3b9c7bc3e4419
+guid: 7ca6a184748bdb7448b753b7137fccea
 TextureImporter:
   fileIDToRecycleName:
-    21300000: giganton_0
-    21300002: giganton_1
-    21300004: giganton_2
-    21300006: giganton_3
+    21300000: BabosaRartra_Transformado_Move_0
+    21300002: BabosaRartra_Transformado_Move_1
+    21300004: BabosaRartra_Transformado_Move_2
+    21300006: BabosaRartra_Transformado_Move_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 12
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +64,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -75,7 +75,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -86,7 +86,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Android
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -110,81 +110,81 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: giganton_0
+      name: BabosaRartra_Transformado_Move_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 22
-        height: 31
-      alignment: 9
-      pivot: {x: 0.50757986, y: 0.01586591}
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c824247091c1aeb428d6063c3faf02f0
+      spriteID: 79bc434b49074cc4bb030b953b06e0a4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: giganton_1
+      name: BabosaRartra_Transformado_Move_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 0
-        width: 22
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5151598, y: 0.01586591}
-      border: {x: 0, y: 0, z: 22, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef6fb6dcddeec954c85f6ab49e4f9a58
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: giganton_2
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 0
-        width: 21
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5357337, y: 0.023934813}
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 103af8f6484f3a04bbcec868e87a16c9
+      spriteID: e994ad3d99befe645b454c515ad44251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: giganton_3
+      name: BabosaRartra_Transformado_Move_2
       rect:
         serializedVersion: 2
-        x: 70
+        x: 0
         y: 0
-        width: 21
-        height: 31
-      alignment: 9
-      pivot: {x: 0.47393653, y: 0.017406408}
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: debff968d6eb4d84baa4e9f81e3bb353
+      spriteID: e4a752548040a5e4eae4f53f2c1c7267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BabosaRartra_Transformado_Move_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4523df1ab9086024badd6bc4b6f2f40f
       vertices: []
       indices: 
       edges: []
@@ -192,7 +192,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7ee767895b957de49b45d37e2f9e133c
+    spriteID: 5822246818d016647bbe9a698dc7104e
     vertices: []
     indices: 
     edges: []

@@ -14,6 +14,8 @@ public class EnemyHealthManager : MonoBehaviour {
 	public string enemyQuestName;
 	private gpjQuestManager theQM;
 
+	public bool isBoss;
+
 	// Use this for initialization
 	void Start () {
 	currentHealth = maxHealth;	
@@ -24,12 +26,17 @@ public class EnemyHealthManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(currentHealth <=0)
+
+		if (currentHealth <=0 && isBoss)
+		{
+			gameObject.GetComponent<BabRartra>().Transmute();
+		} else if(currentHealth <=0)
 		{
 			theQM.enemyKilled = enemyQuestName;
-			Destroy (gameObject);
+			
 
 			thePlayerStats.AddExperience(expToGive);
+			Destroy (gameObject);
 		}
 	}
 
