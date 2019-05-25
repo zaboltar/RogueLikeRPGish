@@ -27,10 +27,12 @@ public class EnemyHealthManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (currentHealth <=0 && isBoss)
+		if (currentHealth <=0 && isBoss) // si muere Y es boss (solo rartra por ahora)
 		{
 			gameObject.GetComponent<BabRartra>().Transmute();
-		} else if(currentHealth <=0)
+			currentHealth = 200;
+			isBoss = false;
+		}  else if(currentHealth <=0) // si no es boss, sino otro bicho
 		{
 			theQM.enemyKilled = enemyQuestName;
 			

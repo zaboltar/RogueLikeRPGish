@@ -11,14 +11,11 @@ public class BabRartra : MonoBehaviour
     public Animator anim;
     private Rigidbody2D myRigidBody;
     public float moveSpeed =3f;
+    public bool isOgre = false;
 
-
-
-    // Start is called before the first frame update
+    
     void Start()
     {
- 
-
         target = GameObject.FindGameObjectWithTag("Player").transform;
         myRigidBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -28,12 +25,12 @@ public class BabRartra : MonoBehaviour
 
     void ReallyDie()
     {
-       
 		Destroy (gameObject);
     }
 
    public void Transmute()
     {
+        
         anim.SetBool("Attack", false);
         anim.SetBool("Transmute", true);
         StartCoroutine(AnimateCo());
@@ -42,8 +39,10 @@ public class BabRartra : MonoBehaviour
 
     private IEnumerator AnimateCo()
     {
+       isOgre = true;
+        yield return new WaitForSeconds(7.2f);
         
-        yield return new WaitForSeconds(2f);
+        anim.SetBool("Transmute", false);
         anim.SetBool("OgreAttack", true);
     }
 
@@ -64,14 +63,26 @@ public class BabRartra : MonoBehaviour
 
         }
 
+
+
+    // if babRartra in collider range => attack him
     void OnTriggerEnter2D (Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             anim.SetBool("Attack", true);
+
+            if (isOgre)
+            {   anim.SetBool("Attack", false);
+                anim.SetBool("OgreAttack", true);
+            } 
+            
+            
         }
     }
 
+
+    // if player leaves collider range; go to chase/idle
     void OnTriggerExit2D (Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
