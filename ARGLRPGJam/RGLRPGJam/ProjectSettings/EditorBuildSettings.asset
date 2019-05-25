@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SplashMenu.unity
     guid: 912073015359fa047abb6534b5c73e6c
   - enabled: 1
+    path: Assets/Scenes/getSword.unity
+    guid: 717723260700ad6428e9b2b403577023
+  - enabled: 1
     path: Assets/Scenes/main.unity
     guid: 0b0db225c06fb434ba1c25bf12cf0f1e
   - enabled: 1
