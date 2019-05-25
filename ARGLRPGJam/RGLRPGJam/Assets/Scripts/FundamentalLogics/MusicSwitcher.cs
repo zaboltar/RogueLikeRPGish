@@ -31,8 +31,12 @@ public class MusicSwitcher : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            theMC.SwitchTrack(newTrack);
-            gameObject.SetActive(false);
+            if (theMC != null )
+            {
+                theMC.SwitchTrack(newTrack);
+                gameObject.SetActive(false);
+            }
+            
         }
     }
 }

@@ -12,6 +12,7 @@ public class BabRartra : MonoBehaviour
     private Rigidbody2D myRigidBody;
     public float moveSpeed =3f;
     public bool isOgre = false;
+    public Collider2D colliderToDisableOnTransmute;
 
     
     void Start()
@@ -19,6 +20,7 @@ public class BabRartra : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").transform;
         myRigidBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        colliderToDisableOnTransmute = GetComponent<Collider2D>();
     }
 
 
@@ -39,9 +41,14 @@ public class BabRartra : MonoBehaviour
 
     private IEnumerator AnimateCo()
     {
-       isOgre = true;
+        isOgre = true;
+        colliderToDisableOnTransmute.enabled = false;
+        myRigidBody.isKinematic = true;
+
         yield return new WaitForSeconds(7.2f);
-        
+
+        myRigidBody.isKinematic = false;
+        colliderToDisableOnTransmute.enabled = true;
         anim.SetBool("Transmute", false);
         anim.SetBool("OgreAttack", true);
     }

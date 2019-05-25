@@ -30,7 +30,7 @@ public class EnemyHealthManager : MonoBehaviour {
 		if (currentHealth <=0 && isBoss) // si muere Y es boss (solo rartra por ahora)
 		{
 			gameObject.GetComponent<BabRartra>().Transmute();
-			currentHealth = 200;
+			currentHealth = 500;
 			isBoss = false;
 		}  else if(currentHealth <=0) // si no es boss, sino otro bicho
 		{
