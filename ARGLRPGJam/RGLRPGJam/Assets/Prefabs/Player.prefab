@@ -122,11 +122,10 @@ GameObject:
   - component: {fileID: 8350655018196881946}
   - component: {fileID: 7862155136567516668}
   - component: {fileID: 2050843782469417883}
-  - component: {fileID: 1095868634}
   - component: {fileID: 1807293534}
   m_Layer: 0
   m_Name: swingAreaEffect
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,18 +243,6 @@ MonoBehaviour:
   hitPoint: {fileID: 1713144867104738861}
   damageNumber: {fileID: 7875939994391367434, guid: f9c18e494c62c084a8f36e3e8e94a464,
     type: 3}
---- !u!114 &1095868634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798166484599731212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe87061983872349978ec227f49df2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1807293534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,8 +255,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d320e5e96762c35419b7efbdf30e6f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 7
-  KnockTime: 0.4
+  thrust: 5
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &3515196503520342692
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,6 +303,7 @@ GameObject:
   - component: {fileID: 7578371392043879006}
   - component: {fileID: 7578371392043878979}
   - component: {fileID: 4038730178888641952}
+  - component: {fileID: 315465998}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -469,6 +458,9 @@ MonoBehaviour:
   attackTime: 0.5
   startPoint: StartPoint
   canMove: 0
+  currentHealthHeart: {fileID: 11400000, guid: 63bcfc095246bf047aff0cb0177717f2, type: 2}
+  playerHealthSignal: {fileID: 11400000, guid: f4bb22e9150d0784ca8b71ba42246f58, type: 2}
+  startingPosition: {fileID: 11400000, guid: 2a5b191f9fc2cb846a5163c94f5c48c2, type: 2}
 --- !u!114 &4038730178888641952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,3 +476,29 @@ MonoBehaviour:
   playerMaxHealth: 50
   playerCurrentHealth: 0
   flashLength: 0.5
+--- !u!61 &315465998
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7578371392043878976}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008292437, y: -0.024877548}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9166667, y: 1.2222223}
+    newSize: {x: 0.875, y: 1.25}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.53520775, y: 0.9071045}
+  m_EdgeRadius: 0

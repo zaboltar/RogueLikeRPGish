@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
+  maxHealth: {fileID: 11400000, guid: 9882bedf2dab6b747911d56a410c7fb4, type: 2}
   health: 55
   enemyName: Not So Evil Log
   baseAttack: 1
@@ -247,3 +248,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 7
   knockTime: 0.2
+  damage: 0

@@ -27,6 +27,10 @@ public class PlayerController : MonoBehaviour {
 
 	private SFXManager sfxMan;
 
+	public floatValue currentHealthHeart;
+	public Signal playerHealthSignal;
+	public vectorValue startingPosition;
+
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -43,6 +47,7 @@ public class PlayerController : MonoBehaviour {
 
 		canMove = true;
 		lastMove = new Vector2(0f, -1f);
+		transform.position = startingPosition.initialValue;
 		
 	}
 	
@@ -105,9 +110,21 @@ public class PlayerController : MonoBehaviour {
 	}
 
 
-	public void Knock( float knockTime)
+	public void Knock( float knockTime, float damage)
 	{
-		StartCoroutine(KnockCo(knockTime));
+
+		currentHealthHeart.RuntimeValue -= damage;
+		playerHealthSignal.Raise();
+		if (currentHealthHeart.RuntimeValue > 0)
+		{
+			
+			StartCoroutine(KnockCo(knockTime));
+		} else
+		
+		{
+			// another death ... lol
+			//this.gameObject.SetActive(false);
+		}
 	}
 
 	 private IEnumerator KnockCo( float knockTime)

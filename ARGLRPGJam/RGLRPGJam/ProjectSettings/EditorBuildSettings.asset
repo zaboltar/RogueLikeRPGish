@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/alternativeArea.unity
     guid: a533e3e3d7dabc74ea668a0a960137a0
+  - enabled: 1
+    path: Assets/Scenes/houseInterior.unity
+    guid: dd332fda8e029a54289846cfb6693071
   m_configObjects: {}
