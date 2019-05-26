@@ -5,44 +5,47 @@ using UnityEngine;
 public class KnockBack : MonoBehaviour
 {
     public float thrust;
-    public float KnockTime;
+    public float knockTime;
+    public float damage;
 
     private void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+         if (other.gameObject.CompareTag("Breakable") && this.gameObject.CompareTag("Player"))
         {
-            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
-            if (enemy != null)
+            other.GetComponent<Pot>().Smash();
+        }
+
+        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Player"))
+        {
+            Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
+            if (hit != null)
             {
-                if (enemy.GetComponent<LogEnemy>() != null)
-                {
-                    enemy.GetComponent<LogEnemy>().currentState = EnemyState.stagger;
-                Vector2 difference = enemy.transform.position - transform.position;
+
+                Vector2 difference = hit.transform.position - transform.position;
                 difference = difference.normalized * thrust;
-                enemy.AddForce(difference, ForceMode2D.Impulse);
+                hit.AddForce(difference, ForceMode2D.Impulse);
+
+                if (other.gameObject.CompareTag("Enemy"))
+                {
+                    hit.GetComponent<LogEnemy>().currentState = EnemyState.stagger;
+                    other.GetComponent<LogEnemy>().Knock(hit, knockTime, damage);
+                }
+
+                if (other.gameObject.CompareTag("Player"))
+                {
+                    other.GetComponent<PlayerController>().Knock(knockTime);
+
                 } else
                 {
                     return;
                 }
-                
 
-                if (enemy != null)
-                {
-                    StartCoroutine(KnockCo(enemy));
-                }
-                
+                    
+                    
+            
             }
         }
     }
 
-    private IEnumerator KnockCo(Rigidbody2D enemyRB)
-    {
-        if (enemyRB != null)
-        {
-            yield return new WaitForSeconds(KnockTime);
-            enemyRB.velocity = Vector2.zero;
-            enemyRB.GetComponent<LogEnemy>().currentState = EnemyState.idle ;
-            
-        }
-    }
+   
 }

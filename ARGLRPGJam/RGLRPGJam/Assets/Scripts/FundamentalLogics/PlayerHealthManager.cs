@@ -13,7 +13,12 @@ public class PlayerHealthManager : MonoBehaviour {
 	private float flashCounter;
 	private SpriteRenderer playerSprite;
 	private SFXManager sfxMan;
-
+	
+	// to destroy on death
+	//public GameObject canvasToDestroy;
+	//public GameObject audioToDestroy;
+	//public GameObject cameraToDestroy;
+	//public GameObject playerToDestroy;
 
 
 	// Use this for initialization
@@ -32,9 +37,25 @@ public class PlayerHealthManager : MonoBehaviour {
 		{
 			//death
 			
+			//Destroy(canvasToDestroy);
+			//Destroy(audioToDestroy);
+			//Destroy(cameraToDestroy);
+			//Destroy(playerToDestroy);
+// me salen errores horribles por ser tan cavernícola al hard resetear todo
 			sfxMan.playerDead.Play();
-			gameObject.SetActive(false);
-			SceneManager.LoadScene(0);
+			//gameObject.SetActive(false);
+			//SceneManager.LoadScene(0);
+			
+			// apply penalties &
+			// show it on canvas
+			// reset quest manager?
+			
+
+
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			SetMaxHealth();
+
+			
 			
 
 
