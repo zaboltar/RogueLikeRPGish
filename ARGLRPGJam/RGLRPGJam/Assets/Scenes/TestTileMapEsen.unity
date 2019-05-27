@@ -1454,6 +1454,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7578371392043878976, guid: 4ccf306864469914c94039c596dbba40,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7578371392043879005, guid: 4ccf306864469914c94039c596dbba40,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1655,6 +1660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1343677999574832824, guid: c265a3e304d7d9248ac4dc2c255b4d6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1343677999574832828, guid: c265a3e304d7d9248ac4dc2c255b4d6a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1852,6 +1862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StartPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791800368298056270, guid: fbc384acbc6bfd94cadaac8a0795524b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3791800368298056264, guid: fbc384acbc6bfd94cadaac8a0795524b,
         type: 3}
@@ -4724,6 +4739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403245118164333878, guid: d71f3924b1319a049964d6f48f1f0bd8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8403245118164334026, guid: d71f3924b1319a049964d6f48f1f0bd8,
         type: 3}

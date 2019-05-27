@@ -968,7 +968,7 @@ RectTransform:
   m_GameObject: {fileID: 1355022473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1307, y: 1.1307, z: 1.1307}
   m_Children:
   - {fileID: 177396980}
   - {fileID: 164276288}
@@ -980,7 +980,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11, y: 45}
+  m_AnchoredPosition: {x: 28, y: 45}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1355022476
@@ -1418,7 +1418,7 @@ RectTransform:
   m_GameObject: {fileID: 2119072562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.44421604, y: 0.44421604, z: 0.44421604}
   m_Children:
   - {fileID: 1355022474}
   m_Father: {fileID: 1343677999574832828}
@@ -1426,7 +1426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 86.5, y: 59.4}
+  m_AnchoredPosition: {x: 72, y: 54}
   m_SizeDelta: {x: 256, y: 192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2119072566
@@ -2067,6 +2067,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1343678000057381772}
   - component: {fileID: 1343678000057381773}
+  - component: {fileID: 1343678001040239604}
   m_Layer: 5
   m_Name: QuestManager
   m_TagString: Untagged
@@ -2118,6 +2119,18 @@ MonoBehaviour:
   theDM: {fileID: 1343678001253161090}
   itemCollected: 
   enemyKilled: 
+--- !u!114 &1343678001040239604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343678000057381771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d155052be3274734090a370d4c0012c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1343678000147387119
 GameObject:
   m_ObjectHideFlags: 0
