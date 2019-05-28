@@ -31,6 +31,9 @@ public class PlayerController : MonoBehaviour {
 	public Signal playerHealthSignal;
 	public vectorValue startingPosition;
 
+	public GameObject inventoryPanel;
+	
+
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -89,6 +92,16 @@ public class PlayerController : MonoBehaviour {
 				}
 				
 			}
+
+			//inventory
+			if (Input.GetKeyDown(KeyCode.I))
+			{
+				inventoryPanel.SetActive(true);
+			} else if (Input.GetKeyUp(KeyCode.I))
+			{
+				inventoryPanel.SetActive(false);
+			}
+			// esto funciona mientras mantengas presionado
 	}	
 
 		if(attackTimeCounter > 0)

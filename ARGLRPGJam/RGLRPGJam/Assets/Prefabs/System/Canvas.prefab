@@ -901,7 +901,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.000007885817}
-  m_SizeDelta: {x: 0, y: 7}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1283572823
 MonoBehaviour:
@@ -1042,7 +1042,7 @@ GameObject:
   - component: {fileID: 1409621501}
   - component: {fileID: 1409621500}
   m_Layer: 5
-  m_Name: Text
+  m_Name: DescText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1285,7 +1285,7 @@ GameObject:
   - component: {fileID: 2112163869}
   - component: {fileID: 2112163868}
   m_Layer: 5
-  m_Name: Button
+  m_Name: useButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2067,7 +2067,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1343678000057381772}
   - component: {fileID: 1343678000057381773}
-  - component: {fileID: 1343678001040239604}
   m_Layer: 5
   m_Name: QuestManager
   m_TagString: Untagged
@@ -2119,18 +2118,6 @@ MonoBehaviour:
   theDM: {fileID: 1343678001253161090}
   itemCollected: 
   enemyKilled: 
---- !u!114 &1343678001040239604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343678000057381771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d155052be3274734090a370d4c0012c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1343678000147387119
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,13 +2935,14 @@ GameObject:
   - component: {fileID: 6969193554100005452}
   - component: {fileID: 8545385851943045911}
   - component: {fileID: 8158676793052624368}
+  - component: {fileID: 1343678001040239605}
   m_Layer: 5
   m_Name: InventoryPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6969193554100005452
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3014,3 +3002,20 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &1343678001040239605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051975755729868829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e541ef816736c6448e23ff36ef6e1b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blankInventorySlot: {fileID: 5788599871037277583, guid: ace38f21f3768fb4bb128bd220e375e2,
+    type: 3}
+  inventoryPanel: {fileID: 1283572820}
+  descriptionText: {fileID: 1409621500}
+  useButton: {fileID: 2112163866}

@@ -9623,9 +9623,29 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 315466004}
-    m_RemovedComponents:
-    - {fileID: 1343678001040239604, guid: c265a3e304d7d9248ac4dc2c255b4d6a, type: 3}
+    - target: {fileID: 9051975755729868829, guid: c265a3e304d7d9248ac4dc2c255b4d6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283572821, guid: c265a3e304d7d9248ac4dc2c255b4d6a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343678001040239605, guid: c265a3e304d7d9248ac4dc2c255b4d6a,
+        type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 11400000, guid: 19d93aca0af474b4c9d1bb137fa15866,
+        type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c265a3e304d7d9248ac4dc2c255b4d6a, type: 3}
+--- !u!1 &1343678001040239604 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9051975755729868829, guid: c265a3e304d7d9248ac4dc2c255b4d6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1343678001040239600}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1451504319337662109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10420,6 +10440,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7578371392043878979, guid: 4ccf306864469914c94039c596dbba40,
+        type: 3}
+      propertyPath: inventoryPanel
+      value: 
+      objectReference: {fileID: 1343678001040239604}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ccf306864469914c94039c596dbba40, type: 3}
 --- !u!1001 &8318219886483378092
