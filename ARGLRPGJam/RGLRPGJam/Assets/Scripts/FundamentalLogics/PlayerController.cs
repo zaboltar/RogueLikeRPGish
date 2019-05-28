@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour {
 	public vectorValue startingPosition;
 
 	public GameObject inventoryPanel;
+	public Inventory playerInventory;
+	public SpriteRenderer receivedItemSprite;
 	
 
 	// Use this for initialization
@@ -150,4 +152,24 @@ public class PlayerController : MonoBehaviour {
             
         }
     }
+
+	public void RaiseItem()
+	{
+		if (playerInventory.currentItem != null)
+		{
+			anim.SetBool("ReceiveItem", true);
+			receivedItemSprite.sprite = playerInventory.currentItem.itemSprite;
+			StartCoroutine(FixThisShitItemPls());
+		}
+		
+	}
+
+	IEnumerator FixThisShitItemPls()
+	{
+		playerInventory.currentItem = null;
+		yield return new WaitForSeconds(3);
+		anim.SetBool("ReceiveItem", false);
+		receivedItemSprite.sprite = null;
+		
+	}
 }
