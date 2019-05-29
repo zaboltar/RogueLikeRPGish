@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Log : LogEnemy
 {
+    public Rigidbody2D myRigidBody;
+    [Header("Target Variables")]
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
     public Transform homePosition;
+    [Header("Animator")]
     public Animator anim;
-    public Rigidbody2D myRigidBody;
+    
 
     void Start()
     {
@@ -50,7 +53,7 @@ public class Log : LogEnemy
 
     }
 
-    private void SetAnimFloat(Vector2 setVector)
+    public void SetAnimFloat(Vector2 setVector)
     {
         anim.SetFloat("MoveX", setVector.x);
         anim.SetFloat("MoveY", setVector.y);
@@ -80,7 +83,7 @@ public class Log : LogEnemy
         }
     }
 
-    private void ChangeState(EnemyState newState)
+    public void ChangeState(EnemyState newState)
     {
         if (currentState != newState)
         {
