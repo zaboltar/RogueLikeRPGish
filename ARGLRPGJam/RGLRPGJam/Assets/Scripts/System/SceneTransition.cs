@@ -5,12 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
+    [Header("New Scene Variables")]
     public string sceneToLoad;
     public Vector2 playerPosition;
     public vectorValue playerStorage;
+    
+    [Header("Transition Variables")]
     public GameObject fadeInPanel;
     public GameObject fadeOutPanel;
     public float fadeWait;
+
+    //acá Taft pone la seccion de setear los bounds de la camara, pero ya funciona de otro modo
+    // ep41 ptm hace todo un rollo con los signals -.-
 
     private void Awake ()
     {

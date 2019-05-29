@@ -12,12 +12,18 @@ public enum EnemyState
 
 public class LogEnemy : MonoBehaviour
 {
+    [Header("State Machine")]
     public EnemyState currentState;
+    
+    [Header("EnemyStats")]
     public floatValue maxHealth;
     public float health;
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
+    private float deathFXtime = 1.2f; 
+    
+    [Header("DeathFX")]
     public GameObject deathFX;
 
     private void Awake ()
@@ -40,7 +46,7 @@ public class LogEnemy : MonoBehaviour
         if (deathFX != null)
         {
             GameObject effect = Instantiate(deathFX, transform.position, Quaternion.identity);
-            Destroy (effect, 1.2f);
+            Destroy (effect, deathFXtime);
         }
     }
 

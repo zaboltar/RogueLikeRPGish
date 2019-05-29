@@ -998,7 +998,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2116721208}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &209549866
 BoxCollider2D:
@@ -9525,9 +9525,9 @@ Transform:
   - {fileID: 268186329}
   - {fileID: 116752314}
   - {fileID: 1786623168}
+  - {fileID: 209549865}
   - {fileID: 1651525254}
   - {fileID: 1330615630}
-  - {fileID: 209549865}
   - {fileID: 1564185613}
   - {fileID: 1869174176}
   - {fileID: 1339657606}
@@ -9887,7 +9887,7 @@ PrefabInstance:
     - target: {fileID: 436913627277959432, guid: 2157bf45e221df449be4cd1527f0d332,
         type: 3}
       propertyPath: m_Name
-      value: TreasureChest
+      value: TreasureChestA
       objectReference: {fileID: 0}
     - target: {fileID: 436913627277959435, guid: 2157bf45e221df449be4cd1527f0d332,
         type: 3}
@@ -9952,6 +9952,11 @@ PrefabInstance:
       propertyPath: dialogText
       value: 
       objectReference: {fileID: 1216514079}
+    - target: {fileID: 1202296956, guid: 2157bf45e221df449be4cd1527f0d332, type: 3}
+      propertyPath: storedOpen
+      value: 
+      objectReference: {fileID: 11400000, guid: bbe8248b6a66e76418c55bbfabe06da5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2157bf45e221df449be4cd1527f0d332, type: 3}
 --- !u!1001 &867788988786691811
@@ -10106,6 +10111,11 @@ PrefabInstance:
       propertyPath: path.Array.data[1]
       value: 
       objectReference: {fileID: 896720948}
+    - target: {fileID: 3208634622571959156, guid: 185b4822b5e356242bc69e8d8b7f5e7c,
+        type: 3}
+      propertyPath: attackRadius
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 764181519153618673, guid: 185b4822b5e356242bc69e8d8b7f5e7c,
         type: 3}
       propertyPath: m_Offset.y
@@ -10528,6 +10538,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 1.3327074
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927092022830982018, guid: f5c96bc36f1b3f8488f5c9b0a86a8306,
+        type: 3}
+      propertyPath: attackRadius
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c96bc36f1b3f8488f5c9b0a86a8306, type: 3}
