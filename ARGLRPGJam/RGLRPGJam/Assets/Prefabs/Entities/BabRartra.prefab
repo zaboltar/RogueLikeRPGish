@@ -124,7 +124,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 4
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -146,13 +146,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  chaseRadius: 7
+  chaseRadius: 6
   attackRadius: 1
   homePosition: {fileID: 0}
   anim: {fileID: 3861623608031460266}
   moveSpeed: 3.5
   isOgre: 0
-  colliderToDisableOnTransmute: {fileID: 3861623608031460267}
+  colliderToDisableOnTransmute: {fileID: 3861623608031460271}
 --- !u!95 &3861623608031460266
 Animator:
   serializedVersion: 3

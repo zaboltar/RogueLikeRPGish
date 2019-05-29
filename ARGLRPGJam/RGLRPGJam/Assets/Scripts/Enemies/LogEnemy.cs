@@ -18,6 +18,7 @@ public class LogEnemy : MonoBehaviour
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
+    public GameObject deathFX;
 
     private void Awake ()
     {
@@ -29,7 +30,17 @@ public class LogEnemy : MonoBehaviour
         health -=damage;
         if (health <= 0)
         {
+            DeathEffect();
             this.gameObject.SetActive(false);
+        }
+    }
+
+    private void DeathEffect()
+    {
+        if (deathFX != null)
+        {
+            GameObject effect = Instantiate(deathFX, transform.position, Quaternion.identity);
+            Destroy (effect, 1.2f);
         }
     }
 

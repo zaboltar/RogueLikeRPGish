@@ -52,6 +52,13 @@ public class TreasureChest : Interactable
         // raise the context clue
         context.Raise();
         anim.SetBool("Open", true);
+        StartCoroutine(CloseDBoxCo());
+    }
+
+    IEnumerator CloseDBoxCo()
+    {
+        yield return new WaitForSeconds(3);
+        dialogBox.SetActive(false);
     }
 
     public void ChestAlreadyOpen()

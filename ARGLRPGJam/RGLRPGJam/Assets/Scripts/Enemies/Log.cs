@@ -9,14 +9,16 @@ public class Log : LogEnemy
     public float attackRadius;
     public Transform homePosition;
     public Animator anim;
-    private Rigidbody2D myRigidBody;
+    public Rigidbody2D myRigidBody;
 
     void Start()
     {
         currentState = EnemyState.idle ;
-        target = GameObject.FindGameObjectWithTag("Player").transform;
         myRigidBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+        anim.SetBool("WakeUp", true);
+       
     }
 
    
@@ -25,7 +27,7 @@ public class Log : LogEnemy
         CheckDistance();
     }
 
-    void CheckDistance()
+    public virtual void CheckDistance()
     {
         if (Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius )
         {
@@ -55,7 +57,7 @@ public class Log : LogEnemy
         
     }
 
-    private void ChangeAnim (Vector2 direction)
+    public void ChangeAnim (Vector2 direction)
     {
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {

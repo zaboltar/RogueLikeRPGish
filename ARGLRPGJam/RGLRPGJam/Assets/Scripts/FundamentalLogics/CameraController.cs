@@ -15,6 +15,8 @@ public class CameraController : MonoBehaviour {
 	private Camera theCamera;
 	private float halfHeight;
 	private float halfWidth;
+	
+	public Animator anim;
 
 	// Use this for initialization
 	void Start () {
@@ -41,6 +43,7 @@ public class CameraController : MonoBehaviour {
 		theCamera = GetComponent<Camera>();
 		halfHeight = theCamera.orthographicSize;
 		halfWidth = halfHeight * Screen.width / Screen.height;
+		anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -70,6 +73,19 @@ public class CameraController : MonoBehaviour {
 		maxBounds = boundBox.bounds.max;
 
 
+	}
+
+	public void BeginKick()
+	{
+		anim.SetBool("KickActive", true);
+		StartCoroutine(KickCo());
+	}
+
+	public IEnumerator KickCo()
+	{
+		
+		yield return null;
+		anim.SetBool("KickActive", false);
 	}
 
 

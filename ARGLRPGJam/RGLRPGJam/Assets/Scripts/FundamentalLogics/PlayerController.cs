@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour {
 	public GameObject inventoryPanel;
 	public Inventory playerInventory;
 	public SpriteRenderer receivedItemSprite;
+
+	public Signal playerHit;
 	
 
 	// Use this for initialization
@@ -144,6 +146,8 @@ public class PlayerController : MonoBehaviour {
 
 	 private IEnumerator KnockCo( float knockTime)
     {
+		playerHit.Raise();
+
         if (myRigidbody != null)
         {
             yield return new WaitForSeconds(knockTime);
@@ -170,6 +174,7 @@ public class PlayerController : MonoBehaviour {
 		yield return new WaitForSeconds(3);
 		anim.SetBool("ReceiveItem", false);
 		receivedItemSprite.sprite = null;
+		
 		
 	}
 }
