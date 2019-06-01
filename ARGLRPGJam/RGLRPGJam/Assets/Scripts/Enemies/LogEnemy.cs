@@ -22,13 +22,23 @@ public class LogEnemy : MonoBehaviour
     public int baseAttack;
     public float moveSpeed;
     private float deathFXtime = 1.2f; 
+
+    public Vector2 homePosition;
     
     [Header("DeathFX")]
     public GameObject deathFX;
 
+    public Signal roomSignal;
+
     private void Awake ()
     {
          health = maxHealth.initialValue;
+         
+    }
+
+    void OnEnable ()
+    {
+        transform.position = homePosition;
     }
 
     private void TakeDamage(float damage)
@@ -37,6 +47,7 @@ public class LogEnemy : MonoBehaviour
         if (health <= 0)
         {
             DeathEffect();
+            roomSignal.Raise();
             this.gameObject.SetActive(false);
         }
     }

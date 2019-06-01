@@ -9,7 +9,7 @@ public class Log : LogEnemy
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
-    public Transform homePosition;
+   // public Transform homePosition;
     [Header("Animator")]
     public Animator anim;
     

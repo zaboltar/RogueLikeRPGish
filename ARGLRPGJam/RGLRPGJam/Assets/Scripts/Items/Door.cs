@@ -55,7 +55,9 @@ public void Open()
 
 public void Close()
 {
-
+     doorSprite.enabled = true;
+     open = false;
+     physicsCollider.enabled = true;
 }
 
 }
