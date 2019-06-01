@@ -27,7 +27,9 @@ public class LogEnemy : MonoBehaviour
     
     [Header("DeathFX")]
     public GameObject deathFX;
+    public LootTable thisLoot;
 
+    [Header("Signals")]
     public Signal roomSignal;
 
     private void Awake ()
@@ -47,8 +49,25 @@ public class LogEnemy : MonoBehaviour
         if (health <= 0)
         {
             DeathEffect();
-            roomSignal.Raise();
+            MakeLoot();
+            if (roomSignal != null )
+            {
+                roomSignal.Raise();
+            }
+            
             this.gameObject.SetActive(false);
+        }
+    }
+
+    private void MakeLoot()
+    {
+        if (thisLoot != null)
+        {
+            PowerUp current = thisLoot.LootPowerUp();
+            if (current != null )
+            {
+                Instantiate (current.gameObject, transform.position, Quaternion.identity);
+            }
         }
     }
 

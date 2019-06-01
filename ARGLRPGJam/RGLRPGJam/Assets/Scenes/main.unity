@@ -376,6 +376,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5845913713603205134, guid: aaaf6146a5867ea4fbea7da7f42a3224,
+        type: 3}
+      propertyPath: thisLoot
+      value: 
+      objectReference: {fileID: 11400000, guid: 87dcb808a2641914d90cfcc09be48e96,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaaf6146a5867ea4fbea7da7f42a3224, type: 3}
 --- !u!4 &52637299 stripped
@@ -1832,6 +1838,12 @@ PrefabInstance:
       propertyPath: attackRadius
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 1927092022830982018, guid: f5c96bc36f1b3f8488f5c9b0a86a8306,
+        type: 3}
+      propertyPath: thisLoot
+      value: 
+      objectReference: {fileID: 11400000, guid: 87dcb808a2641914d90cfcc09be48e96,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c96bc36f1b3f8488f5c9b0a86a8306, type: 3}
 --- !u!4 &471240972 stripped
@@ -2345,6 +2357,12 @@ PrefabInstance:
       propertyPath: homePosition.y
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 1927092022830982018, guid: f5c96bc36f1b3f8488f5c9b0a86a8306,
+        type: 3}
+      propertyPath: thisLoot
+      value: 
+      objectReference: {fileID: 11400000, guid: 87dcb808a2641914d90cfcc09be48e96,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c96bc36f1b3f8488f5c9b0a86a8306, type: 3}
 --- !u!114 &569048644 stripped
@@ -3567,6 +3585,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5845913713603205134, guid: aaaf6146a5867ea4fbea7da7f42a3224,
+        type: 3}
+      propertyPath: thisLoot
+      value: 
+      objectReference: {fileID: 11400000, guid: 87dcb808a2641914d90cfcc09be48e96,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaaf6146a5867ea4fbea7da7f42a3224, type: 3}
 --- !u!4 &818292640 stripped
@@ -5552,6 +5576,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5845913713603205134, guid: aaaf6146a5867ea4fbea7da7f42a3224,
+        type: 3}
+      propertyPath: thisLoot
+      value: 
+      objectReference: {fileID: 11400000, guid: 87dcb808a2641914d90cfcc09be48e96,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaaf6146a5867ea4fbea7da7f42a3224, type: 3}
 --- !u!4 &1255127072 stripped
@@ -11006,6 +11036,12 @@ PrefabInstance:
       propertyPath: attackRadius
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3208634622571959156, guid: 185b4822b5e356242bc69e8d8b7f5e7c,
+        type: 3}
+      propertyPath: thisLoot
+      value: 
+      objectReference: {fileID: 11400000, guid: 87dcb808a2641914d90cfcc09be48e96,
+        type: 2}
     - target: {fileID: 764181519153618673, guid: 185b4822b5e356242bc69e8d8b7f5e7c,
         type: 3}
       propertyPath: m_Offset.y
@@ -11566,6 +11602,7 @@ MonoBehaviour:
   moveSpeed: 2
   homePosition: {x: 0, y: 0}
   deathFX: {fileID: 7194323982368809250, guid: 5fec160d27c1ff74e985a16709731b3d, type: 3}
+  thisLoot: {fileID: 11400000, guid: 87dcb808a2641914d90cfcc09be48e96, type: 2}
   roomSignal: {fileID: 0}
   myRigidBody: {fileID: 0}
   target: {fileID: 315466007}
@@ -12232,6 +12269,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5845913713603205134, guid: aaaf6146a5867ea4fbea7da7f42a3224,
+        type: 3}
+      propertyPath: thisLoot
+      value: 
+      objectReference: {fileID: 11400000, guid: 87dcb808a2641914d90cfcc09be48e96,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaaf6146a5867ea4fbea7da7f42a3224, type: 3}
 --- !u!114 &5845913714025158842 stripped
@@ -12785,6 +12828,11 @@ PrefabInstance:
       propertyPath: homePosition.y
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 621589227, guid: 46e1bac3f49eab045947edd9121a094b, type: 3}
+      propertyPath: thisLoot
+      value: 
+      objectReference: {fileID: 11400000, guid: 87dcb808a2641914d90cfcc09be48e96,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e1bac3f49eab045947edd9121a094b, type: 3}
 --- !u!114 &8447338577073131469 stripped
