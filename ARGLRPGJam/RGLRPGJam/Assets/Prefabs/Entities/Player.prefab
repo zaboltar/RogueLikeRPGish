@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 337050888}
   - component: {fileID: 337050890}
   - component: {fileID: 337050889}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReceivedItem
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -119,7 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058643115}
   - component: {fileID: 1058643118}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SwrdweaponScrptd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1834650670}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 7862155136567516668}
   - component: {fileID: 2050843782469417883}
   - component: {fileID: 1807293534}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: swingAreaEffect
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1713144867104738861}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: hitPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5590381520469728315}
   - component: {fileID: 8190006043543061517}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ContextClue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 315465998}
   - component: {fileID: 3511803411770587128}
   - component: {fileID: 8795471707111889244}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -656,6 +656,8 @@ MonoBehaviour:
   inventoryPanel: {fileID: 0}
   playerInventory: {fileID: 11400000, guid: 579273374a9b24847af73250c3872fc7, type: 2}
   receivedItemSprite: {fileID: 337050890}
+  playerHit: {fileID: 11400000, guid: 9ff1a5ea6e850424abd973da95970886, type: 2}
+  projectile: {fileID: 0}
 --- !u!114 &4038730178888641952
 MonoBehaviour:
   m_ObjectHideFlags: 0

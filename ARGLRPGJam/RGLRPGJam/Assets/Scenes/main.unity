@@ -12626,10 +12626,10 @@ PrefabInstance:
       objectReference: {fileID: 1343678001040239604}
     - target: {fileID: 7578371392043878979, guid: 4ccf306864469914c94039c596dbba40,
         type: 3}
-      propertyPath: playerHit
+      propertyPath: projectile
       value: 
-      objectReference: {fileID: 11400000, guid: 9ff1a5ea6e850424abd973da95970886,
-        type: 2}
+      objectReference: {fileID: 530888275598362245, guid: 91de3cc5758b4de468f41f62e6edd55d,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ccf306864469914c94039c596dbba40, type: 3}
 --- !u!1001 &7680449009491908352

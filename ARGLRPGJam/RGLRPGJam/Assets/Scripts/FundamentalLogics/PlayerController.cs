@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour {
 	public SpriteRenderer receivedItemSprite;
 
 	public Signal playerHit;
+	public GameObject projectile;
 	
 
 	// Use this for initialization
@@ -84,19 +85,7 @@ public class PlayerController : MonoBehaviour {
 				myRigidbody.velocity = Vector2.zero;
 			}
 
-			if( Input.GetKeyDown(KeyCode.Space) ) //de j a space
-				{
-				attackTimeCounter = attackTime;
-				attacking = true;
-				myRigidbody.velocity = Vector2.zero;
-				anim.SetBool("Attack", true);
-				if (sfxMan != null)
-				{
-					sfxMan.playerAttack.Play();
-				}
-				
-			}
-
+			
 			//inventory
 			if (Input.GetKeyDown(KeyCode.I))
 			{
@@ -124,8 +113,68 @@ public class PlayerController : MonoBehaviour {
 		anim.SetBool("PlayerMoving", playerMoving);
 		anim.SetFloat("LastMoveX", lastMove.x);
 		anim.SetFloat("LastMoveY", lastMove.y);
+
+		//attacks
+		if( Input.GetKeyDown(KeyCode.Space) ) //de j a space
+				{
+				attackTimeCounter = attackTime;
+				attacking = true;
+				myRigidbody.velocity = Vector2.zero;
+				anim.SetBool("Attack", true);
+				if (sfxMan != null)
+				{
+					sfxMan.playerAttack.Play();
+				}
+			//RANGED ATTACK
+			// no se si esto deberia ir acá, pero el codigo esta tan distinto en este script que sólo metere rage	
+			} else if (Input.GetButtonDown("SecondaryWeapon"))
+				{
+					StartCoroutine(SecondaryAttack());
+				}
+
 	}
 
+	public IEnumerator SecondaryAttack()
+	{
+		yield return null;
+		MakeArrow();
+		yield return new WaitForSeconds(.3f);
+		
+	}
+	private void MakeArrow()
+	{
+		Vector2 temp = new Vector2(lastMove.x, lastMove.y );
+		Arrow arrow = Instantiate(projectile,
+		 transform.position, Quaternion.identity)
+		 .GetComponent<Arrow>();
+
+		arrow.Setup(temp,ChooseArrowDirection());
+	}
+
+	Vector3 ChooseArrowDirection()
+	{
+		float temp = Mathf.Atan2(lastMove.y,
+		 lastMove.x) * Mathf.Rad2Deg; //tangente
+		return new Vector3 (0, 0 , temp);
+	}
+
+	/*private void MakeArrow()
+	{
+		Vector2 temp = new Vector2(anim.GetFloat("MoveX"), anim.GetFloat("MoveY") );
+		Arrow arrow = Instantiate(projectile,
+		 transform.position, Quaternion.identity)
+		 .GetComponent<Arrow>();
+
+		arrow.Setup(temp,ChooseArrowDirection());
+	}
+
+	Vector3 ChooseArrowDirection()
+	{
+		float temp = Mathf.Atan2(anim.GetFloat("MoveY"),
+		 anim.GetFloat("MoveX")) * Mathf.Rad2Deg; //tangente
+		return new Vector3 (0, 0 , temp);
+	}
+ */
 
 	public void Knock( float knockTime, float damage)
 	{
