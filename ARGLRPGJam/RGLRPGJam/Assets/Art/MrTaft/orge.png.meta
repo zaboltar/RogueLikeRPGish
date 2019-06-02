@@ -1,23 +1,23 @@
 fileFormatVersion: 2
-guid: 950eced9073a75b49b24a7a6adb5fdbf
+guid: dddd15f775101b44483b2c074710ea9d
 TextureImporter:
   fileIDToRecycleName:
-    21300000: alienoid_0
-    21300002: alienoid_1
-    21300004: alienoid_2
-    21300006: alienoid_3
-    21300008: alienoid_4
-    21300010: alienoid_5
-    21300012: alienoid_6
-    21300014: alienoid_7
-    21300016: alienoid_8
-    21300018: alienoid_9
-    21300020: alienoid_10
-    21300022: alienoid_11
-    21300024: alienoid_12
-    21300026: alienoid_13
-    21300028: alienoid_14
-    21300030: alienoid_15
+    21300000: orge_0
+    21300002: orge_1
+    21300004: orge_2
+    21300006: orge_3
+    21300008: orge_4
+    21300010: orge_5
+    21300012: orge_6
+    21300014: orge_7
+    21300016: orge_8
+    21300018: orge_9
+    21300020: orge_10
+    21300022: orge_11
+    21300024: orge_12
+    21300026: orge_13
+    21300028: orge_14
+    21300030: orge_15
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -61,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,7 +76,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -87,7 +87,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -98,7 +98,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Android
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -109,7 +109,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -122,321 +122,321 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alienoid_0
+      name: orge_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 720
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.4971555, y: 0.20132598}
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76fdcbe8529150544809e90d9439a7ea
+      spriteID: 9690915966361be48a427cbdb51eed73
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alienoid_1
+      name: orge_1
       rect:
         serializedVersion: 2
-        x: 240
-        y: 720
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.4857774, y: 0.21270396}
+        x: 16
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0cc99ebdecd8c247828a1bf2e4478c8
+      spriteID: 89576c54c9bd0dc499f45511dd8fce1b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alienoid_2
+      name: orge_2
       rect:
         serializedVersion: 2
-        x: 480
-        y: 720
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.5, y: 0.20132598}
+        x: 32
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d979541a75f498f47a3c605ed3c4ae10
+      spriteID: df33910b48108d6438f6b42069aca7f5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alienoid_3
+      name: orge_3
       rect:
         serializedVersion: 2
-        x: 720
-        y: 720
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.5188731, y: 0.20934677}
+        x: 48
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 763ab99b6dedce645b1052a6c92d7005
+      spriteID: 53ad2d1641a33b442bc7c87c18a059d5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alienoid_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 480
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.5, y: 0.21312155}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d26087b596e88f74ca76c0ce0aaa11e1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alienoid_5
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 480
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.49622524, y: 0.20557226}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a16f1697adbfd714c9abe3e1d8a3a36d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alienoid_6
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 480
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.5, y: 0.20934702}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bc9ebe8582f97f49a34b1b8b20e107c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alienoid_7
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 480
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.51132405, y: 0.19802271}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2029e6a2adf2e274aa17dc12bdb3167f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alienoid_8
+      name: orge_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 240
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.5, y: 0.20557238}
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05c8f5c0185c1c442a4f010f0ce3a792
+      spriteID: 1e846e1ed50359446bfa69f43443bffc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alienoid_9
+      name: orge_5
       rect:
         serializedVersion: 2
-        x: 240
-        y: 240
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.50377476, y: 0.19802298}
+        x: 16
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca66ab892ddea9a4e82c257f9a9b3d81
+      spriteID: 51740c6eb24f12c479e3155fa756b937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alienoid_10
+      name: orge_6
       rect:
         serializedVersion: 2
-        x: 480
-        y: 240
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.5, y: 0.20179762}
+        x: 32
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf9d37100f66aa94dae4b50a2f368a22
+      spriteID: 1c97d693f7f5052469b3496fa65d9e37
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alienoid_11
+      name: orge_7
       rect:
         serializedVersion: 2
-        x: 720
-        y: 240
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.5037745, y: 0.20179762}
+        x: 48
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38ceaa22e443f464b82c2458fb0a2f9a
+      spriteID: 73cbb3c09abc2324e8ffba40cc5c3f08
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alienoid_12
+      name: orge_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1b43c9c08132a48bc11605cbe70e21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orge_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4bde879fa5d2d4581a37d4cdd4a1fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orge_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d47bc227a714042854ecf05fd71446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orge_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7855d84f7645afd46b92c9854bdf17f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orge_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.5, y: 0.19802283}
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a5843ed8a9bfab4185e166d20377c0a
+      spriteID: 5eff7cb561d989549802955c3594ddb0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alienoid_13
+      name: orge_13
       rect:
         serializedVersion: 2
-        x: 240
+        x: 16
         y: 0
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.50377476, y: 0.19424812}
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 685a2f985e176a24a8230c797f1166e0
+      spriteID: 6abf5387ab44f8a49a40d409442d7ff1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alienoid_14
+      name: orge_14
       rect:
         serializedVersion: 2
-        x: 480
+        x: 32
         y: 0
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.49622524, y: 0.20179754}
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef8e95ef6ff21274d8c42f9f71619c9e
+      spriteID: fff118ca9aeba1a45b0b8a560b52a84a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alienoid_15
+      name: orge_15
       rect:
         serializedVersion: 2
-        x: 720
+        x: 48
         y: 0
-        width: 240
-        height: 240
-      alignment: 9
-      pivot: {x: 0.49622524, y: 0.19802283}
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a48752df5053914283bcc4fed300edb
+      spriteID: 8b86489b99a8b274080bfe65597d8ae4
       vertices: []
       indices: 
       edges: []
@@ -444,7 +444,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 78362676f5728e64abd41198225f5173
+    spriteID: 9e8ba9ad0ac547041a6ea74153e196b5
     vertices: []
     indices: 
     edges: []
