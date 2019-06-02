@@ -19,8 +19,9 @@ public class MagicManager : MonoBehaviour
    
     public void AddMagic()
     {
-        magicSlider.value +=1;
-        playerInventory.currentMagic += 1;
+       // magicSlider.value +=1;
+       magicSlider.value = playerInventory.currentMagic;
+        //playerInventory.currentMagic += 1;
         if (magicSlider.value > magicSlider.maxValue)
         {
             magicSlider.value = magicSlider.maxValue;
@@ -30,8 +31,9 @@ public class MagicManager : MonoBehaviour
     
     public void DecreaseMagic()
     {
-        magicSlider.value -= 1;
-        playerInventory.currentMagic -= 1;
+      //  magicSlider.value -= 1;
+      //  playerInventory.currentMagic -= 1;
+      magicSlider.value = playerInventory.currentMagic;
         if (magicSlider.value < 0)
         {
             magicSlider.value = 0;

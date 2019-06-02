@@ -153,6 +153,7 @@ public class PlayerController : MonoBehaviour {
 				 .GetComponent<Arrow>();
 
 			arrow.Setup(temp,ChooseArrowDirection());
+			playerInventory.ReduceMagic(arrow.magicCost);
 			reduceMagic.Raise();
 		}
 		

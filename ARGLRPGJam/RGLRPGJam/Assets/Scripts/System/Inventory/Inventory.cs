@@ -15,6 +15,16 @@ public class Inventory : ScriptableObject
   public float maxMagic = 10f;
   public float currentMagic;
 
+    public void OnEnable()
+    {
+        currentMagic = maxMagic;
+    }
+
+    public void ReduceMagic(float magicCost)
+    {
+        currentMagic -= magicCost;
+    }
+
   public void AddItem(Item itemToAdd)
   {
       // is the item a key?
