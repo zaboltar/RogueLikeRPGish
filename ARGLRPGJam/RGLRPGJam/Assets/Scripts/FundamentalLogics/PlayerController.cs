@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour {
 
 	public Signal playerHit;
 	public GameObject projectile;
+
+	public Signal reduceMagic;
 	
 
 	// Use this for initialization
@@ -143,12 +145,17 @@ public class PlayerController : MonoBehaviour {
 	}
 	private void MakeArrow()
 	{
-		Vector2 temp = new Vector2(lastMove.x, lastMove.y );
-		Arrow arrow = Instantiate(projectile,
-		 transform.position, Quaternion.identity)
-		 .GetComponent<Arrow>();
+		if (playerInventory.currentMagic > 0)
+		{
+			Vector2 temp = new Vector2(lastMove.x, lastMove.y );
+			Arrow arrow = Instantiate(projectile,
+		 		transform.position, Quaternion.identity)
+				 .GetComponent<Arrow>();
 
-		arrow.Setup(temp,ChooseArrowDirection());
+			arrow.Setup(temp,ChooseArrowDirection());
+			reduceMagic.Raise();
+		}
+		
 	}
 
 	Vector3 ChooseArrowDirection()
