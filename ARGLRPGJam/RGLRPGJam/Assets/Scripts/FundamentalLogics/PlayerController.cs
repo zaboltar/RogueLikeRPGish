@@ -5,43 +5,47 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+	[Header ("Movement")]
 	public float moveSpeed;
 	private float currentMoveSpeed;
-	//public float diagonalMoveModifier;
-
-	private Animator anim;
-	private Rigidbody2D myRigidbody;
 	private bool playerMoving;
 	public Vector2 lastMove;
-
 	private Vector2 moveInput;
+	public bool canMove;
 
+	[Header ("Core")]
+	private Animator anim;
+	private Rigidbody2D myRigidbody;
 	private static bool playerExists;
+	private SFXManager sfxMan;
 
+	[Header ("Attacks")]
 	private bool attacking;
 	public float attackTime;
 	private float attackTimeCounter;
+	public Signal reduceMagic;
+	public GameObject projectile;
+	public Item bow;
+	public Item sword;
+	public GameObject SwordToAnimate;
 
+	[Header ("Setup")]
 	public string startPoint;
-	public bool canMove;
-
-	private SFXManager sfxMan;
-
-	public floatValue currentHealthHeart;
-	public Signal playerHealthSignal;
 	public vectorValue startingPosition;
 
+	[Header ("Health")]
+	public floatValue currentHealthHeart;
+	public Signal playerHealthSignal;
+	public Signal playerHit;
+
+	[Header ("UI/Data")]
 	public GameObject inventoryPanel;
 	public Inventory playerInventory;
 	public SpriteRenderer receivedItemSprite;
 
-	public Signal playerHit;
-	public GameObject projectile;
 
-	public Signal reduceMagic;
+
 	
-
-	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
 		myRigidbody = GetComponent<Rigidbody2D>();
@@ -61,8 +65,8 @@ public class PlayerController : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
 		
 		playerMoving = false;
 
@@ -117,7 +121,10 @@ public class PlayerController : MonoBehaviour {
 		anim.SetFloat("LastMoveY", lastMove.y);
 
 		//attacks
-		if( Input.GetKeyDown(KeyCode.Space) ) //de j a space
+		if (playerInventory.CheckForItem(sword))
+		{
+			SwordToAnimate.gameObject.SetActive(true);
+			if( Input.GetKeyDown(KeyCode.Space) ) //de j a space
 				{
 				attackTimeCounter = attackTime;
 				attacking = true;
@@ -127,12 +134,17 @@ public class PlayerController : MonoBehaviour {
 				{
 					sfxMan.playerAttack.Play();
 				}
-			//RANGED ATTACK
-			// no se si esto deberia ir acá, pero el codigo esta tan distinto en este script que sólo metere rage	
-			} else if (Input.GetButtonDown("SecondaryWeapon"))
+		} else if (playerInventory.CheckForItem(bow))	//RANGED ATTACK
+		
+			{
+			 if (Input.GetButtonDown("SecondaryWeapon"))
 				{
 					StartCoroutine(SecondaryAttack());
 				}
+			}
+
+		}
+			
 
 	}
 
