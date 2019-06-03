@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8809195199652114941}
   - component: {fileID: 8809195198523313981}
   - component: {fileID: 8809195198523313956}
+  - component: {fileID: 1297896419}
   m_Layer: 8
   m_Name: AreaLog
   m_TagString: Enemy
@@ -30,7 +31,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6989282745277997207}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.37, y: 1.4, z: 0.03125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -138,7 +139,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0041724443, y: -0.05267763}
+  m_Offset: {x: 0.011593819, y: -0.07494354}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -149,7 +150,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9271643, y: 1.3327074}
+  m_Size: {x: 1.2091999, y: 1.6147432}
   m_EdgeRadius: 0
 --- !u!114 &8809195199652114941
 MonoBehaviour:
@@ -179,7 +180,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.05156052}
+  m_Offset: {x: -0.023616493, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -190,7 +191,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9473092, y: 1.3341606}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &8809195198523313956
 MonoBehaviour:
@@ -207,3 +208,31 @@ MonoBehaviour:
   thrust: 3
   knockTime: 0.2
   damage: 1
+--- !u!114 &1297896419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6989282745277997207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d69363ff6875454e83151bbba4b8902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  maxHealth: {fileID: 11400000, guid: 9882bedf2dab6b747911d56a410c7fb4, type: 2}
+  health: 0
+  enemyName: AreaLog
+  baseAttack: 1
+  moveSpeed: 3
+  homePosition: {x: 30, y: 2}
+  deathFX: {fileID: 7194323982368809250, guid: 5fec160d27c1ff74e985a16709731b3d, type: 3}
+  thisLoot: {fileID: 11400000, guid: 9f853c65f900e5b42be8217dde2f760f, type: 2}
+  roomSignal: {fileID: 0}
+  myRigidBody: {fileID: 6989282745277997202}
+  target: {fileID: 0}
+  chaseRadius: 4
+  attackRadius: 0.6
+  anim: {fileID: 6989282745277997206}
+  zoneBoundary: {fileID: 0}
