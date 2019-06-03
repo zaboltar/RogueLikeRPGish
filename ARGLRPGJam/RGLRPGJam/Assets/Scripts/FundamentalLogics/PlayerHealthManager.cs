@@ -42,7 +42,11 @@ public class PlayerHealthManager : MonoBehaviour {
 			//Destroy(cameraToDestroy);
 			//Destroy(playerToDestroy);
 // me salen errores horribles por ser tan cavernícola al hard resetear todo
-			sfxMan.playerDead.Play();
+			if (sfxMan != null)
+			{
+				sfxMan.playerDead.Play();
+			}
+			
 			//gameObject.SetActive(false);
 			//SceneManager.LoadScene(0);
 			

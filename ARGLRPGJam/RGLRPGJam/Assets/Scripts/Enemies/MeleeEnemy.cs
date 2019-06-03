@@ -7,7 +7,7 @@ public class MeleeEnemy : Log
     // Start is called before the first frame update
     void Start()
     {
-        
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -18,6 +18,8 @@ public class MeleeEnemy : Log
 
     public override void CheckDistance()
     {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+        
         if (Vector3.Distance(target.position, transform.position)
          <= chaseRadius && Vector3.Distance
          (target.position, transform.position) > attackRadius )

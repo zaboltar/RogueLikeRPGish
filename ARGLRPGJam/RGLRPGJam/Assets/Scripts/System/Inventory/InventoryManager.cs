@@ -13,6 +13,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject inventoryPanel; // CONTENT -.-
     [SerializeField] private Text descriptionText;
     [SerializeField] private GameObject useButton;
+    public InventoryItem currentItem;
 
     public void SetTextAndButton(string description, bool buttonActive)
     {
@@ -46,16 +47,26 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         MakeInventorySlots();
         SetTextAndButton("", false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   public void SetupDescriptionAndButton(string newDescriptionString,
+    bool isButtonUsable, InventoryItem newItem)
+   {
+       currentItem = newItem;
+       descriptionText.text = newDescriptionString;
+       useButton.SetActive(isButtonUsable);
+   }
+
+   public void UseButtonPressed()
+   {
+       if (currentItem)
+       {
+           currentItem.Use();
+       }
+   }
 }

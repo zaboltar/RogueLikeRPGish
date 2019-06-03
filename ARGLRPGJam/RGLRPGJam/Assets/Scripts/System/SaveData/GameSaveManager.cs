@@ -26,6 +26,7 @@ public class GameSaveManager : MonoBehaviour
     private void OnEnable()
     {
         LoadScriptables();
+        //ResetScriptables();
     }
 
     private void OnDisable()
