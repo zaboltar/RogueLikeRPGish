@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class floatValue : ScriptableObject, ISerializationCallbackReceiver
+[System.Serializable]
+public class floatValue : ScriptableObject
 {
   
     public float initialValue;
@@ -11,14 +12,6 @@ public class floatValue : ScriptableObject, ISerializationCallbackReceiver
     [HideInInspector]
     public float RuntimeValue;
 
-    public void OnAfterDeserialize()
-    {
-        RuntimeValue = initialValue;
-    }
-
-    public void OnBeforeSerialize()
-    {
-
-    }
+   
 
 }

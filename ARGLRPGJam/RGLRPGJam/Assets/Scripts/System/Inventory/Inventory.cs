@@ -6,6 +6,7 @@ using UnityEngine;
 // esta es la 1era version del inv !
 
 [CreateAssetMenu]
+[System.Serializable]
 public class Inventory : ScriptableObject
 {
   public Item currentItem;

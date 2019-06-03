@@ -203,7 +203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1834650670
 Transform:
   m_ObjectHideFlags: 0
@@ -647,17 +647,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   lastMove: {x: 0, y: 0}
-  attackTime: 0.5
-  startPoint: StartPoint
   canMove: 0
+  attackTime: 0.5
+  reduceMagic: {fileID: 11400000, guid: 17ae218e0075b284ca2c04b4fcbe98d2, type: 2}
+  projectile: {fileID: 530888275598362245, guid: 91de3cc5758b4de468f41f62e6edd55d,
+    type: 3}
+  bow: {fileID: 11400000, guid: a507460926c4ab148a60b0b2e6ed4124, type: 2}
+  sword: {fileID: 11400000, guid: 4e007723fb14ba046989ac16ecb675d0, type: 2}
+  SwordToAnimate: {fileID: 1834650669}
+  startPoint: StartPoint
+  startingPosition: {fileID: 11400000, guid: 2a5b191f9fc2cb846a5163c94f5c48c2, type: 2}
   currentHealthHeart: {fileID: 11400000, guid: 63bcfc095246bf047aff0cb0177717f2, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: f4bb22e9150d0784ca8b71ba42246f58, type: 2}
-  startingPosition: {fileID: 11400000, guid: 2a5b191f9fc2cb846a5163c94f5c48c2, type: 2}
+  playerHit: {fileID: 11400000, guid: 9ff1a5ea6e850424abd973da95970886, type: 2}
   inventoryPanel: {fileID: 0}
   playerInventory: {fileID: 11400000, guid: 579273374a9b24847af73250c3872fc7, type: 2}
   receivedItemSprite: {fileID: 337050890}
-  playerHit: {fileID: 11400000, guid: 9ff1a5ea6e850424abd973da95970886, type: 2}
-  projectile: {fileID: 0}
 --- !u!114 &4038730178888641952
 MonoBehaviour:
   m_ObjectHideFlags: 0
