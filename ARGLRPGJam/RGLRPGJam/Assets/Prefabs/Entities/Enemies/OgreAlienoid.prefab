@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 226239070}
   - component: {fileID: 226239071}
   - component: {fileID: 226239072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 262348158}
   - component: {fileID: 262348159}
   - component: {fileID: 262348160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 1142367176}
   - component: {fileID: 1142367177}
   - component: {fileID: 1142367178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DownHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 1419732973}
   - component: {fileID: 1419732974}
   - component: {fileID: 1419732975}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: UPHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,9 +324,10 @@ GameObject:
   - component: {fileID: 7680449009031878293}
   - component: {fileID: 7680449009031878292}
   - component: {fileID: 1370570426470490885}
-  m_Layer: 0
+  - component: {fileID: 1274132437}
+  m_Layer: 8
   m_Name: OgreAlienoid
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -507,7 +508,7 @@ MonoBehaviour:
   enemyName: OgreAlienoid
   baseAttack: 4
   moveSpeed: 1
-  homePosition: {x: -5, y: -5}
+  homePosition: {x: 65, y: 2}
   deathFX: {fileID: 7194323982368809250, guid: 5fec160d27c1ff74e985a16709731b3d, type: 3}
   thisLoot: {fileID: 11400000, guid: 87dcb808a2641914d90cfcc09be48e96, type: 2}
   roomSignal: {fileID: 11400000, guid: d8e9afe09153e10498a04851d915c71a, type: 2}
@@ -516,3 +517,18 @@ MonoBehaviour:
   chaseRadius: 5
   attackRadius: 0.9
   anim: {fileID: 7680449009031878292}
+--- !u!114 &1274132437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7680449009031878290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a262c193b4b29264bbb5cb47e112b6a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 5
+  damageNumber: {fileID: 7875939994391367434, guid: f9c18e494c62c084a8f36e3e8e94a464,
+    type: 3}

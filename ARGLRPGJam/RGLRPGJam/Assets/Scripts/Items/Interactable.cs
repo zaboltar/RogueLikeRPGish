@@ -16,7 +16,11 @@ public class Interactable : MonoBehaviour
         if (other.CompareTag("Player") && !other.isTrigger )
         {
             // player in range
-            context.Raise();
+            if (context != null)
+            {
+                context.Raise();
+            }
+            
             playerInRange = true;
         }
     }
@@ -26,7 +30,11 @@ public class Interactable : MonoBehaviour
         if (other.CompareTag("Player")  && !other.isTrigger )
         {
             // player out of range
-            context.Raise();
+            if (context != null)
+            {
+                context.Raise();
+            }
+            
             playerInRange = false;
             
         }
