@@ -8,22 +8,22 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SplashMenu.unity
     guid: 912073015359fa047abb6534b5c73e6c
-  - enabled: 1
-    path: Assets/Scenes/getSword.unity
+  - enabled: 0
+    path: Assets/Scenes/DeprecatedScenes/getSword.unity
     guid: 717723260700ad6428e9b2b403577023
-  - enabled: 1
-    path: Assets/Scenes/main.unity
+  - enabled: 0
+    path: Assets/Scenes/DeprecatedScenes/main.unity
     guid: 0b0db225c06fb434ba1c25bf12cf0f1e
-  - enabled: 1
-    path: Assets/Scenes/alternativeArea.unity
+  - enabled: 0
+    path: Assets/Scenes/DeprecatedScenes/alternativeArea.unity
     guid: a533e3e3d7dabc74ea668a0a960137a0
-  - enabled: 1
-    path: Assets/Scenes/houseInterior.unity
-    guid: dd332fda8e029a54289846cfb6693071
   - enabled: 1
     path: Assets/Scenes/TestTileMapEsen.unity
     guid: 6e1206484a5e9e7459df00ea04a30526
+  - enabled: 1
+    path: Assets/Scenes/DeprecatedScenes/houseInterior.unity
+    guid: dd332fda8e029a54289846cfb6693071
   m_configObjects: {}
