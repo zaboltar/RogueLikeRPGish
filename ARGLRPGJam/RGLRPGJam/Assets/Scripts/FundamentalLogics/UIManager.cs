@@ -31,8 +31,8 @@ public class UIManager : MonoBehaviour {
 			
 			healthBar.maxValue = playerHealth.playerMaxHealth;
 			healthBar.value = playerHealth.playerCurrentHealth;
-			HPText.text = "Spirit: " + playerHealth.playerCurrentHealth + "/" + playerHealth.playerMaxHealth;
-			levelText.text = "Lvl: " + thePS.currentLevel;
+			HPText.text = "Spirit : " + playerHealth.playerCurrentHealth + "/" + playerHealth.playerMaxHealth;
+			levelText.text = "Power : " + thePS.currentLevel;
 
 
 
