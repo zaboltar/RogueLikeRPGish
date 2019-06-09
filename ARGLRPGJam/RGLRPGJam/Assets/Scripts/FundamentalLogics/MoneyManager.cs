@@ -20,7 +20,7 @@ public class MoneyManager : MonoBehaviour
         currentGold = 0;
         PlayerPrefs.SetInt("CurrentMoney", 0);
         }
-        moneyText.text = "Gold: " + currentGold;
+        moneyText.text = "Relics: " + currentGold;
 
     }
 

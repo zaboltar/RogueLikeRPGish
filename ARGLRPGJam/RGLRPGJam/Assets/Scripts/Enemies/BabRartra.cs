@@ -12,7 +12,7 @@ public class BabRartra : MonoBehaviour
     private Rigidbody2D myRigidBody;
     public float moveSpeed =3f;
     public bool isOgre = false;
-    public Collider2D colliderToDisableOnTransmute;
+   public Collider2D colliderToDisableOnTransmute;
 
     
     void Start()
@@ -46,7 +46,7 @@ public class BabRartra : MonoBehaviour
         myRigidBody.isKinematic = true;
 
         yield return new WaitForSeconds(7.2f);
-
+//
         myRigidBody.isKinematic = false;
         colliderToDisableOnTransmute.enabled = true;
         anim.SetBool("Transmute", false);

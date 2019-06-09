@@ -208,6 +208,10 @@ public class PlayerController : MonoBehaviour {
 		} else
 		
 		{
+			if(currentHealthHeart.RuntimeValue < 0)
+			{
+				currentHealthHeart.RuntimeValue = 0;
+			}
 			// another death ... lol
 			//this.gameObject.SetActive(false);
 		}

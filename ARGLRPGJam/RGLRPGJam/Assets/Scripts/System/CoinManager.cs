@@ -10,6 +10,6 @@ public class CoinManager : MonoBehaviour
 
     public void UpdateCoinCount()
     {
-        coinDisplay.text = "" + playerInventory.coins;
+        coinDisplay.text = "Parts: " + playerInventory.coins;
     }
 }

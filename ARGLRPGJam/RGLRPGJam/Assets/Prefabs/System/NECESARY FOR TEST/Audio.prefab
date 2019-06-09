@@ -133,6 +133,46 @@ PrefabInstance:
       propertyPath: coinPick
       value: 
       objectReference: {fileID: 2542999626581772127}
+    - target: {fileID: 114491065847190836, guid: 110405bd3808d0f4b863b7de3ba4c5ca,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1cb468ca16084af46ac8a51078a2858f, type: 3}
+    - target: {fileID: 114491066400956532, guid: 110405bd3808d0f4b863b7de3ba4c5ca,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d6be3b88287b13640a91a24003db95b3, type: 3}
+    - target: {fileID: 114491066409538828, guid: 110405bd3808d0f4b863b7de3ba4c5ca,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1c1325b4f9010fc4b9992c39f354c555, type: 3}
+    - target: {fileID: 114491066851834173, guid: 110405bd3808d0f4b863b7de3ba4c5ca,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 92e15d0c3c126c241a9b60b18e9cf0d9, type: 3}
+    - target: {fileID: 114491067134514702, guid: 110405bd3808d0f4b863b7de3ba4c5ca,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f121a538646f4904ebfd66ccecfbf362, type: 3}
+    - target: {fileID: 114491067159305534, guid: 110405bd3808d0f4b863b7de3ba4c5ca,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ffef51e64c74784dbbcb3ee7f85c76e, type: 3}
+    - target: {fileID: 114491067279891595, guid: 110405bd3808d0f4b863b7de3ba4c5ca,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b8af12dfa00eae64590b193ccdad1ead, type: 3}
+    - target: {fileID: 114491067279891595, guid: 110405bd3808d0f4b863b7de3ba4c5ca,
+        type: 3}
+      propertyPath: Priority
+      value: 132
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 110405bd3808d0f4b863b7de3ba4c5ca, type: 3}
 --- !u!4 &2542999626097455426 stripped
@@ -262,11 +302,6 @@ PrefabInstance:
       propertyPath: musicTracks.Array.data[5]
       value: 
       objectReference: {fileID: 2542999625469636292}
-    - target: {fileID: 1447315627327116170, guid: a2b473ea177b93046803177937888389,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.13
-      objectReference: {fileID: 0}
     - target: {fileID: 1447315628926309266, guid: a2b473ea177b93046803177937888389,
         type: 3}
       propertyPath: m_Volume
@@ -277,7 +312,7 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.13
       objectReference: {fileID: 0}
-    - target: {fileID: 1447315627336207708, guid: a2b473ea177b93046803177937888389,
+    - target: {fileID: 1447315629086884918, guid: a2b473ea177b93046803177937888389,
         type: 3}
       propertyPath: m_Volume
       value: 0.13
@@ -287,7 +322,12 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.13
       objectReference: {fileID: 0}
-    - target: {fileID: 1447315629086884918, guid: a2b473ea177b93046803177937888389,
+    - target: {fileID: 1447315627336207708, guid: a2b473ea177b93046803177937888389,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447315627327116170, guid: a2b473ea177b93046803177937888389,
         type: 3}
       propertyPath: m_Volume
       value: 0.13
